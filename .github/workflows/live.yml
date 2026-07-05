@@ -28,3 +28,6 @@ jobs:
           git add output.json
           git commit -m "update" || echo "no changes"
           git push
+
+- name: Dependencies
+  run: pip install -r requirements.txt
