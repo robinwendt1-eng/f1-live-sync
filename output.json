@@ -1,4 +1,94 @@
 {
-  "timestamp": "2026-07-05T17:30:04.648822",
-  "status": "ok"
+  "timestamp": "2026-07-05T17:38:56.048212",
+  "race": "British Grand Prix",
+  "positions": [
+    {
+      "position": "1",
+      "driver": "LEC"
+    },
+    {
+      "position": "2",
+      "driver": "RUS"
+    },
+    {
+      "position": "3",
+      "driver": "HAM"
+    },
+    {
+      "position": "4",
+      "driver": "NOR"
+    },
+    {
+      "position": "5",
+      "driver": "HAD"
+    },
+    {
+      "position": "6",
+      "driver": "LAW"
+    },
+    {
+      "position": "7",
+      "driver": "LIN"
+    },
+    {
+      "position": "8",
+      "driver": "BOR"
+    },
+    {
+      "position": "9",
+      "driver": "COL"
+    },
+    {
+      "position": "10",
+      "driver": "GAS"
+    },
+    {
+      "position": "11",
+      "driver": "PIA"
+    },
+    {
+      "position": "12",
+      "driver": "SAI"
+    },
+    {
+      "position": "13",
+      "driver": "BEA"
+    },
+    {
+      "position": "14",
+      "driver": "OCO"
+    },
+    {
+      "position": "15",
+      "driver": "PER"
+    },
+    {
+      "position": "16",
+      "driver": "ANT"
+    },
+    {
+      "position": "17",
+      "driver": "BOT"
+    },
+    {
+      "position": "18",
+      "driver": "ALO"
+    },
+    {
+      "position": "19",
+      "driver": "STR"
+    },
+    {
+      "position": "20",
+      "driver": "VER"
+    },
+    {
+      "position": "21",
+      "driver": "ALB"
+    },
+    {
+      "position": "22",
+      "driver": "HUL"
+    }
+  ]
 }
