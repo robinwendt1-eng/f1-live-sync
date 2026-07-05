@@ -4,13 +4,32 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  sync:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Repository herunterladen
-        uses: actions/checkout@v4
+    permissions:
+      contents: write
 
-      - name: Test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python installieren
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Abhängigkeiten installieren
         run: |
-          echo "F1 Live Sync läuft!"
+          pip install -r requirements.txt
+
+      - name: Script ausführen
+        run: |
+          python scraper.py
+
+      - name: output.json hochladen
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add output.json
+          git commit -m "Live Update" || echo "Keine Änderungen"
+          git push
