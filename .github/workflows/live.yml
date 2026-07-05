@@ -18,16 +18,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Script ausführen
+      - name: Install
+        run: pip install requests
+
+      - name: Run Script
         run: python scraper.py
 
-      - name: Commit output.json
+      - name: Commit file
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add output.json
           git commit -m "update" || echo "no changes"
           git push
-
-- name: Dependencies
-  run: pip install -r requirements.txt
