@@ -1,0 +1,16 @@
+name: F1 Live Sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository herunterladen
+        uses: actions/checkout@v4
+
+      - name: Test
+        run: |
+          echo "F1 Live Sync läuft!"
